@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(135deg, rgb(11, 21, 48) 0%, rgb(29, 38, 66) 100%);
+}
+
+.resume_container{
+    display:flex;
+}
+
+
+p{
+    color: aqua;
+}
+
+/*Specificity Challenge: Class wins here because it has higher specificity than selector. */
+.footer_element{
+    color:rgb(5, 5, 80);
+    font-style:italic;
+    font-weight:bolder
+}
+
+h1{
+    color: brown;
+}
+
+/*Specificity Challenge: ID wins here because it has higher specificity than selector */
+#Name{
+    color:aquamarine;
+    font-weight: bold;
+}
+
+.Major{
+    color:darkred;
+}
+
+/*Specififcity Challenge: ID wins here because it has higher specificity than class. */
+#Profession{
+    color:aqua;
+    font-weight: bold;
+}
+
+nav{
+    color:beige;
+    font-weight: bold;
+}
+
+span{
+    color:cadetblue;
+}
+
+.About_Section{
+    display:inline-block;
+    color:aquamarine;
+    background-image:linear-gradient(rgb(206, 239, 218));
+    background-repeat: no-repeat;
+    background-size: 110% 40%; 
+    background-position: 0 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
