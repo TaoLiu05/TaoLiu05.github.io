@@ -19,13 +19,13 @@ p{
     color:cyan;
 }
 
-/*Class wins here because it has higher specificity than element/tag. 100s is greater than 10s. */
+/*Class wins here because it has higher specificity than element/tag. (0,1,0) > (0,0,1). 100s is greater than 10s. */
 .footer_element{
     color:beige;
     font-style:italic;
     font-weight:bolder;
 }
-/*End of Specificity challenge 1*/
+/*End of Specificity Challenge 1*/
 
 /* Name */
 /* Specificity Challenge 2 */
@@ -33,26 +33,26 @@ h1{
     color: brown;
 }
 
-/*ID wins here because it has higher specificity than element/tag. 1000s is greater than 10s. */
+/*ID wins here because it has higher specificity than element/tag. (1,0,0) > (0,0,1). 1000s is greater than 10s. */
 #Name{
     color:aquamarine;
     font-weight: bold;
     font-style: italic;
 }
-/* End of Specificity challenge 2 */
+/* End of Specificity Challenge 2 */
 
 /* Occupation */
-/* Specificity Chalenge 3 */
+/* Specificity Challenge 3 */
 .Major{
     color:darkred;
 }
 
-/*ID wins here because it has higher specificity than class. 1000s is greater than 100s. */
+/*ID wins here because it has higher specificity than class. (1,0,0) > (0,1,0). 1000s is greater than 100s. */
 #Profession{
     color:aqua;
     font-weight: bold;
 }
-/* End of Specificity challenge 3*/
+/* End of Specificity Challenge 3*/
 
 /* Link to Github page */
 .link,
