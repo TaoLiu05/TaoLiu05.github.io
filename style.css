@@ -1,53 +1,76 @@
 body{
-    background: linear-gradient(135deg, rgb(11, 21, 48) 0%, rgb(29, 38, 66) 100%);
+    background: linear-gradient(150deg, rgb(11, 21, 48) 0%, rgb(29, 38, 66) 100%);
+    font-family: "Space Grotesk";
 }
 
 .resume_container{
     display:flex;
 }
 
+.resume_profile_container{
+    text-align: center;
+}
 
+/* Specificity Challenge 1 */
 p{
-    color: aqua;
+    color:cyan;
 }
 
-/*Specificity Challenge: Class wins here because it has higher specificity than selector. */
+/*Class wins here because it has higher specificity than element/tag. 100s is greater than 10s. */
 .footer_element{
-    color:rgb(5, 5, 80);
+    color:beige;
     font-style:italic;
-    font-weight:bolder
+    font-weight:bolder;
 }
+/*End of Specificity challenge 1*/
 
+/* Specificity Challenge 2 */
 h1{
     color: brown;
 }
 
-/*Specificity Challenge: ID wins here because it has higher specificity than selector */
+/*ID wins here because it has higher specificity than element/tag. 1000s is greater than 10s. */
 #Name{
     color:aquamarine;
     font-weight: bold;
+    font-style: italic;
 }
+/* End of Specificity challenge 2 */
 
+/* Specificity Chalenge 3 */
 .Major{
     color:darkred;
 }
 
-/*Specififcity Challenge: ID wins here because it has higher specificity than class. */
+/*ID wins here because it has higher specificity than class. 1000s is greater than 100s. */
 #Profession{
     color:aqua;
     font-weight: bold;
 }
+/* End of Specificity challenge 3*/
 
+.link,
 nav{
     color:beige;
     font-weight: bold;
 }
+
+.link:hover {
+    color:aqua;
+}
+
+.image{
+    width: 300px;
+    border: 10px solid cyan;
+}
+
 
 span{
     color:cadetblue;
 }
 
 .About_Section{
+    font-style: italic;
     display:inline-block;
     color:aquamarine;
     background-image:linear-gradient(rgb(206, 239, 218));
@@ -55,6 +78,40 @@ span{
     background-size: 110% 40%; 
     background-position: 0 150%;
 }
+
+
+.Sub_About_Section{
+    color:deepskyblue;
+}
+
+
+section{
+    color:beige;
+    margin-left: 30px;
+}
+
+.skills{
+    margin-right: 30px;
+}
+
+table{
+    background-color: darkcyan;
+}
+
+.Table_Header{
+    background-color:rgb(36, 86, 180);
+}
+
+tr{
+    background-color: cornflowerblue;
+}
+
+
+
+
+
+
+
 
 
 
