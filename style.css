@@ -3,14 +3,17 @@ body{
     font-family: "Space Grotesk";
 }
 
+/*Maintain the layout of the resume*/
 .resume_container{
     display:flex;
 }
 
+/*Center the left side of the resume */
 .resume_profile_container{
     text-align: center;
 }
 
+/* Footer */
 /* Specificity Challenge 1 */
 p{
     color:cyan;
@@ -24,6 +27,7 @@ p{
 }
 /*End of Specificity challenge 1*/
 
+/* Name */
 /* Specificity Challenge 2 */
 h1{
     color: brown;
@@ -37,6 +41,7 @@ h1{
 }
 /* End of Specificity challenge 2 */
 
+/* Occupation */
 /* Specificity Chalenge 3 */
 .Major{
     color:darkred;
@@ -49,6 +54,7 @@ h1{
 }
 /* End of Specificity challenge 3*/
 
+/* Link to Github page */
 .link,
 nav{
     color:beige;
@@ -59,6 +65,7 @@ nav{
     color:aqua;
 }
 
+/* Professional Image */
 .image{
     width: 300px;
     border: 10px solid cyan;
@@ -69,6 +76,7 @@ span{
     color:cadetblue;
 }
 
+/* Section Titles */
 .About_Section{
     font-style: italic;
     display:inline-block;
@@ -79,17 +87,18 @@ span{
     background-position: 0 150%;
 }
 
-
+/* Section Sub-Titles */
 .Sub_About_Section{
     color:deepskyblue;
 }
 
-
+/* Everything else in the section */
 section{
     color:beige;
     margin-left: 30px;
 }
 
+/* Skill Table */
 .skills{
     margin-right: 30px;
 }
@@ -98,6 +107,7 @@ table{
     background-color: darkcyan;
 }
 
+
 .Table_Header{
     background-color:rgb(36, 86, 180);
 }
@@ -105,7 +115,6 @@ table{
 tr{
     background-color: cornflowerblue;
 }
-
 
 
 
