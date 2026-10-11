@@ -3,6 +3,9 @@
     <head>
         <title>Professional Resume</title>
 
+        <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     </head>
@@ -82,17 +85,41 @@
                 <section>
                     <h3 class="About_Section">Projects</h3>
 
-                    <h4 class="Sub_About_Section">Snake Game</h4>
-                    <ul>
-                        <li>Built a console-based Snake game in C++ using object-oriented design.</li>
-                        <li>Implemented non-blocking keyboard input using Linux termios/fcntl, snake growth, collision detection, increasing game difficulty, and a reset system.</li>
-                    </ul>
+                    <div class="project_grid">
 
-                    <h4 class="Sub_About_Section">Library Management System</h4>
-                    <ul>
-                        <li>Built a console-based library management system using object-oriented programming in C++.</li>
-                        <li>Designed book management features like searching, adding, removing, borrowing, and returning books with the automatic saving and loading of book data.</li>
-                    </ul>
+                        <article class ="project_card">
+
+                            <img class="project_image" src="./assets/Snake Game Screenshot.png"/>
+                    
+                            <h4 class="Sub_About_Section">Snake Game</h4>
+                            <ul>
+                                <li>Built a console-based Snake game in C++ using object-oriented design.</li>
+                                <li>Implemented non-blocking keyboard input using Linux termios/fcntl, snake growth, collision detection, increasing game difficulty, and a reset system.</li>
+                            </ul>
+                        </article>
+
+                        <article class ="project_card">
+
+                            <img class="project_image" src="./assets/Library Management System Screenshot.png"/>
+
+                            <h4 class="Sub_About_Section">Library Management System</h4>
+                            <ul>
+                                <li>Built a console-based library management system using object-oriented programming in C++.</li>
+                                <li>Designed book management features like searching, adding, removing, borrowing, and returning books with the automatic saving and loading of book data.</li>
+                            </ul>
+                        </article>
+
+                        <article class = "project_card">
+                            <img class="project_image" src="./assets/Weather Checking Website Screenshot.png"/>
+                            <h4 class="Sub_About_Section">Weather Checking App</h4>
+                            <ul>
+                                <li>Collaborated with another developer to build a responsive weather web application using HTML, CSS, and JavaScript.</li>
+                                <li> Integrated the OpenWeatherMap API using asynchronous fetch requests to retrieve and display real time weather information.</li>
+                            </ul>
+                        </article>
+            
+                    </div>
+
                 </section>
             
                 <hr>
