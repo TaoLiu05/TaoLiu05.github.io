@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background: linear-gradient(150deg, rgb(11, 21, 48) 0%, rgb(29, 38, 66) 100%);
     font-family: "Space Grotesk";
@@ -6,6 +10,8 @@ body{
 /*Maintain the layout of the resume*/
 .resume_container{
     display:flex;
+    justify-content:center;
+    align-items:top;
 }
 
 /*Center the left side of the resume */
@@ -17,6 +23,14 @@ body{
 /* Specificity Challenge 1 */
 p{
     color:cyan;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+
 }
 
 /*Class wins here because it has higher specificity than element/tag. (0,1,0) > (0,0,1). 100s is greater than 10s. */
@@ -67,8 +81,16 @@ nav{
 
 /* Professional Image */
 .image{
-    width: 300px;
+    width: 90%;
     border: 10px solid cyan;
+
+}
+
+/* project Images */
+.project_image{
+    width:70%;
+    height:40%;
+    border: 1px solid cyan;
 }
 
 
@@ -87,6 +109,7 @@ span{
     background-position: 0 150%;
 }
 
+
 /* Section Sub-Titles */
 .Sub_About_Section{
     color:deepskyblue;
@@ -96,6 +119,19 @@ span{
 section{
     color:beige;
     margin-left: 30px;
+}
+
+/* project section */
+.project_grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 15px;
+}
+
+.project_card{
+    border: 2px solid cadetblue;
+    padding:5px;
+    text-align: center;
 }
 
 /* Skill Table */
@@ -114,6 +150,76 @@ table{
 
 tr{
     background-color: cornflowerblue;
+}
+
+@media (max-width: 768px){
+
+    .resume_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume_profile_container{
+        order:1;
+    }
+
+    main{
+        order:2;
+    }
+
+    .header{
+        text-align: center;
+    }
+
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        gap:11px;
+    }
+
+    .project_grid{
+        grid-template-columns: 1fr;
+        grid-gap:15px;
+    }
+
+    .skills{
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    #Name{
+        font-size: 25px;
+    }
+
+    #Profession{
+        font-size: 15px;
+    }
+
+    .About_Section{
+        font-size: 20px;
+    }
+
+    .Sub_About_Section{
+        font-size: 15px;
+        overflow-wrap: anywhere;
+    }
+
+    body{
+        font-size: 12px;
+        line-height: 1.5;
+
+    }
+
+    footer{
+        padding: 10px;
+    }
+
+    .footer_element{
+        font-size:10px;
+        text-align: center;
+    }
+
 }
 
 
