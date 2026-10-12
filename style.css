@@ -26,11 +26,23 @@ p{
 }
 
 nav{
-    display:flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
 
+}
+
+a {
+    color:aquamarine;
+    font-weight: bold;
+}
+.shortcut{
+    display:flex;
+    padding:5%;
+}
+
+a:hover{
+    color:rgb(139, 213, 188);
 }
 
 /*Class wins here because it has higher specificity than element/tag. (0,1,0) > (0,0,1). 100s is greater than 10s. */
@@ -129,9 +141,9 @@ section{
 }
 
 .project_card{
-    border: 2px solid cadetblue;
     padding:5px;
     text-align: center;
+    border: 2px solid cadetblue;
 }
 
 /* Skill Table */
@@ -173,14 +185,22 @@ tr{
     }
 
     .nav{
+        display:flex;
         flex-direction: column;
         align-items: center;
         gap:11px;
     }
 
+    .shortcut{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
     .project_grid{
         grid-template-columns: 1fr;
-        grid-gap:15px;
+        grid-gap:5px;
     }
 
     .skills{
@@ -198,6 +218,7 @@ tr{
 
     .About_Section{
         font-size: 20px;
+        text-align: center;
     }
 
     .Sub_About_Section{
