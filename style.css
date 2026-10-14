@@ -39,6 +39,7 @@ a {
 .shortcut{
     display:flex;
     padding:5%;
+    gap: 1.1%;
 }
 
 a:hover{
@@ -100,8 +101,10 @@ nav{
 
 /* project Images */
 .project_image{
+    display:block;
     width:70%;
     height:40%;
+    margin: 0 auto;
     border: 1px solid cyan;
 }
 
@@ -130,7 +133,7 @@ span{
 /* Everything else in the section */
 section{
     color:beige;
-    margin-left: 30px;
+    margin: 0 15px;
 }
 
 /* project section */
@@ -148,7 +151,7 @@ section{
 
 /* Skill Table */
 .skills{
-    margin-right: 30px;
+    margin: 0 15px;
 }
 
 table{
@@ -164,6 +167,8 @@ tr{
     background-color: cornflowerblue;
 }
 
+
+/* Mobile screen adjustments */
 @media (max-width: 768px){
 
     .resume_container{
@@ -180,11 +185,11 @@ tr{
         order:2;
     }
 
-    .header{
+    header{
         text-align: center;
     }
 
-    .nav{
+    nav{
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -199,13 +204,25 @@ tr{
     }
 
     .project_grid{
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         grid-gap:5px;
+        justify-content: center;
+        width:100%;
+    }
+
+    .project_card{
+        width:100%;
+        text-align: center;
     }
 
     .skills{
         max-width: 100%;
         overflow-x: auto;
+    }
+
+    .skills table{
+        margin-left: auto;
+        margin-right:auto;
     }
 
     #Name{
@@ -218,7 +235,9 @@ tr{
 
     .About_Section{
         font-size: 20px;
-        text-align: center;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .Sub_About_Section{
